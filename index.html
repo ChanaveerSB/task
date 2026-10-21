@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse, search, sort, and manage a task list."
+    />
+    <title>Task List | Warm-up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">WORKSPACE / PROJECTS</p>
+          <h1>Task list</h1>
+          <p class="subtitle">
+            Track work, owners, and deadlines across your projects.
+          </p>
+        </div>
+        <span class="live-indicator"><span></span> Mock data</span>
+      </header>
+
+      <section class="panel" aria-label="Tasks">
+        <div class="toolbar">
+          <label class="search-wrap" for="search-input">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Search tasks</span>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search title or assignee…"
+              autocomplete="off"
+            />
+          </label>
+          <label class="select-wrap" for="status-filter">
+            <span class="visually-hidden">Filter by status</span>
+            <select id="status-filter">
+              <option value="all">All statuses</option>
+              <option value="todo">To Do</option>
+              <option value="in_progress">In Progress</option>
+              <option value="done">Done</option>
+            </select>
+          </label>
+          <button class="button button-quiet" id="export-button" type="button">
+            ↓ <span>Export CSV</span>
+          </button>
+        </div>
+
+        <div id="notice" class="notice" role="status" aria-live="polite">
+          Loading tasks…
+        </div>
+        <div id="table-region" class="table-region" hidden>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" aria-sort="ascending">
+                  <button class="sort-button" data-sort="id">
+                    # <span class="sort-arrow">↑</span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="title">
+                    Title <span class="sort-arrow"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="project">
+                    Project <span class="sort-arrow"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="assignee">
+                    Assignee <span class="sort-arrow"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="status">
+                    Status <span class="sort-arrow"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="priority">
+                    Priority <span class="sort-arrow"></span>
+                  </button>
+                </th>
+                <th scope="col">
+                  <button class="sort-button" data-sort="dueDate">
+                    Due date <span class="sort-arrow"></span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="task-rows"></tbody>
+          </table>
+        </div>
+
+        <footer class="table-footer" id="table-footer" hidden>
+          <p id="summary" class="summary"></p>
+          <div class="pagination-area">
+            <label class="rows-control" for="page-size"
+              >Rows per page
+              <select id="page-size">
+                <option>5</option>
+                <option selected>10</option>
+                <option>20</option>
+              </select>
+            </label>
+            <nav
+              class="pagination"
+              id="pagination"
+              aria-label="Task pages"
+            ></nav>
+          </div>
+        </footer>
+      </section>
+      <p class="footnote">
+        Sorted and filtered locally · Last updated just now
+      </p>
+    </main>
+  </body>
+</html>
