@@ -1,0 +1,487 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Refactor invoice PDF",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-11-05",
+      "createdAt": "2026-10-13T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Design dashboard wireframes",
+      "project": "Analytics Portal",
+      "assignee": "Priya Sharma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-18",
+      "createdAt": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Fix mobile navigation",
+      "project": "Website Revamp",
+      "assignee": "Aman Verma",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-22",
+      "createdAt": "2026-10-14T08:15:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Update user onboarding copy",
+      "project": "Mobile App",
+      "assignee": null,
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-10-16",
+      "createdAt": "2026-10-12T12:20:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Add CSV export",
+      "project": "Analytics Portal",
+      "assignee": "Neha Patel",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-25",
+      "createdAt": "2026-10-15T11:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Write API documentation",
+      "project": "Platform",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": "2026-10-12",
+      "createdAt": "2026-10-08T13:30:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Improve login validation",
+      "project": "Mobile App",
+      "assignee": "Kabir Singh",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-20",
+      "createdAt": "2026-10-16T09:10:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Review analytics events",
+      "project": "Analytics Portal",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-29",
+      "createdAt": "2026-10-17T07:45:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Create empty-state illustrations",
+      "project": "Website Revamp",
+      "assignee": "Priya Sharma",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-11",
+      "createdAt": "2026-10-09T14:00:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Optimize database indexes",
+      "project": "Platform",
+      "assignee": "Aman Verma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-21",
+      "createdAt": "2026-10-16T15:40:00Z"
+    },
+    {
+      "id": 11,
+      "title": "Add password reset flow",
+      "project": "Mobile App",
+      "assignee": "Neha Patel",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-27",
+      "createdAt": "2026-10-17T10:10:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Audit accessibility labels",
+      "project": "Website Revamp",
+      "assignee": "Kabir Singh",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-14",
+      "createdAt": "2026-10-10T16:20:00Z"
+    },
+    {
+      "id": 13,
+      "title": "Build activity timeline",
+      "project": "Analytics Portal",
+      "assignee": "Ravi Kumar",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-30",
+      "createdAt": "2026-10-18T09:00:00Z"
+    },
+    {
+      "id": 14,
+      "title": "Update footer links",
+      "project": "Website Revamp",
+      "assignee": null,
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-10-19",
+      "createdAt": "2026-10-15T13:10:00Z"
+    },
+    {
+      "id": 15,
+      "title": "Test checkout edge cases",
+      "project": "Mobile App",
+      "assignee": "Priya Sharma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-24",
+      "createdAt": "2026-10-18T12:30:00Z"
+    },
+    {
+      "id": 16,
+      "title": "Prepare sprint report",
+      "project": "Platform",
+      "assignee": "Aman Verma",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": "2026-10-15",
+      "createdAt": "2026-10-11T09:45:00Z"
+    },
+    {
+      "id": 17,
+      "title": "Add keyboard shortcuts",
+      "project": "Analytics Portal",
+      "assignee": "Kabir Singh",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-11-02",
+      "createdAt": "2026-10-19T08:10:00Z"
+    },
+    {
+      "id": 18,
+      "title": "Fix chart tooltip alignment",
+      "project": "Analytics Portal",
+      "assignee": "Neha Patel",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-26",
+      "createdAt": "2026-10-18T14:20:00Z"
+    },
+    {
+      "id": 19,
+      "title": "Remove unused CSS",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-17",
+      "createdAt": "2026-10-12T08:30:00Z"
+    },
+    {
+      "id": 20,
+      "title": "Set up error monitoring",
+      "project": "Platform",
+      "assignee": null,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-23",
+      "createdAt": "2026-10-19T11:15:00Z"
+    },
+    {
+      "id": 21,
+      "title": "Create project settings page",
+      "project": "Mobile App",
+      "assignee": "Priya Sharma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-31",
+      "createdAt": "2026-10-17T16:40:00Z"
+    },
+    {
+      "id": 22,
+      "title": "Clean up API responses",
+      "project": "Platform",
+      "assignee": "Aman Verma",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-28",
+      "createdAt": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": 23,
+      "title": "Document component patterns",
+      "project": "Website Revamp",
+      "assignee": "Kabir Singh",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-13",
+      "createdAt": "2026-10-11T15:00:00Z"
+    },
+    {
+      "id": 24,
+      "title": "Improve loading skeleton",
+      "project": "Mobile App",
+      "assignee": "Neha Patel",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-30",
+      "createdAt": "2026-10-18T11:30:00Z"
+    },
+    {
+      "id": 25,
+      "title": "Add team member roles",
+      "project": "Platform",
+      "assignee": "Ravi Kumar",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-11-03",
+      "createdAt": "2026-10-19T12:00:00Z"
+    },
+    {
+      "id": 26,
+      "title": "Polish notification settings",
+      "project": "Mobile App",
+      "assignee": null,
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-10-21",
+      "createdAt": "2026-10-18T13:00:00Z"
+    },
+    {
+      "id": 27,
+      "title": "Add table column visibility",
+      "project": "Analytics Portal",
+      "assignee": "Priya Sharma",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-11-04",
+      "createdAt": "2026-10-19T13:20:00Z"
+    },
+    {
+      "id": 28,
+      "title": "Fix avatar fallback",
+      "project": "Website Revamp",
+      "assignee": "Aman Verma",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-16",
+      "createdAt": "2026-10-13T10:15:00Z"
+    },
+    {
+      "id": 29,
+      "title": "Add audit log filters",
+      "project": "Platform",
+      "assignee": "Kabir Singh",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-11-01",
+      "createdAt": "2026-10-19T14:00:00Z"
+    },
+    {
+      "id": 30,
+      "title": "Review empty search state",
+      "project": "Analytics Portal",
+      "assignee": "Neha Patel",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": "2026-10-18",
+      "createdAt": "2026-10-14T10:40:00Z"
+    },
+    {
+      "id": 31,
+      "title": "Improve mobile spacing",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-27",
+      "createdAt": "2026-10-19T15:00:00Z"
+    },
+    {
+      "id": 32,
+      "title": "Add retry to upload flow",
+      "project": "Mobile App",
+      "assignee": "Priya Sharma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-29",
+      "createdAt": "2026-10-18T16:00:00Z"
+    },
+    {
+      "id": 33,
+      "title": "Optimize report queries",
+      "project": "Analytics Portal",
+      "assignee": "Aman Verma",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-10-17",
+      "createdAt": "2026-10-12T11:45:00Z"
+    },
+    {
+      "id": 34,
+      "title": "Update privacy notice",
+      "project": "Website Revamp",
+      "assignee": null,
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-10-25",
+      "createdAt": "2026-10-17T09:00:00Z"
+    },
+    {
+      "id": 35,
+      "title": "Create CSV import validation",
+      "project": "Platform",
+      "assignee": "Kabir Singh",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-30",
+      "createdAt": "2026-10-19T09:30:00Z"
+    },
+    {
+      "id": 36,
+      "title": "Fix modal focus handling",
+      "project": "Mobile App",
+      "assignee": "Neha Patel",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-22",
+      "createdAt": "2026-10-19T10:30:00Z"
+    },
+    {
+      "id": 37,
+      "title": "Add weekly email digest",
+      "project": "Platform",
+      "assignee": "Ravi Kumar",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-11-06",
+      "createdAt": "2026-10-19T11:00:00Z"
+    },
+    {
+      "id": 38,
+      "title": "Refine settings layout",
+      "project": "Website Revamp",
+      "assignee": "Priya Sharma",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-14",
+      "createdAt": "2026-10-15T08:50:00Z"
+    },
+    {
+      "id": 39,
+      "title": "Add CSV export tests",
+      "project": "Analytics Portal",
+      "assignee": "Aman Verma",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-24",
+      "createdAt": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": 40,
+      "title": "Improve form validation messages",
+      "project": "Mobile App",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-26",
+      "createdAt": "2026-10-19T12:40:00Z"
+    },
+    {
+      "id": 41,
+      "title": "Add keyboard focus styles",
+      "project": "Website Revamp",
+      "assignee": "Kabir Singh",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-20",
+      "createdAt": "2026-10-18T07:30:00Z"
+    },
+    {
+      "id": 42,
+      "title": "Review data retention rules",
+      "project": "Platform",
+      "assignee": "Neha Patel",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-11-07",
+      "createdAt": "2026-10-19T13:50:00Z"
+    },
+    {
+      "id": 43,
+      "title": "Create billing overview",
+      "project": "Analytics Portal",
+      "assignee": "Ravi Kumar",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-28",
+      "createdAt": "2026-10-19T14:30:00Z"
+    },
+    {
+      "id": 44,
+      "title": "Fix tablet breakpoint",
+      "project": "Website Revamp",
+      "assignee": "Aman Verma",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-10-23",
+      "createdAt": "2026-10-19T15:10:00Z"
+    },
+    {
+      "id": 45,
+      "title": "Add project archive option",
+      "project": "Platform",
+      "assignee": "Priya Sharma",
+      "status": "done",
+      "priority": "medium",
+      "dueDate": "2026-10-19",
+      "createdAt": "2026-10-16T11:20:00Z"
+    },
+    {
+      "id": 46,
+      "title": "Tune search performance",
+      "project": "Analytics Portal",
+      "assignee": null,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-27",
+      "createdAt": "2026-10-19T16:20:00Z"
+    },
+    {
+      "id": 47,
+      "title": "Add task activity notes",
+      "project": "Mobile App",
+      "assignee": "Kabir Singh",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-11-08",
+      "createdAt": "2026-10-19T17:00:00Z"
+    },
+    {
+      "id": 48,
+      "title": "Verify deployment checklist",
+      "project": "Platform",
+      "assignee": "Neha Patel",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-21",
+      "createdAt": "2026-10-19T17:30:00Z"
+    }
+  ],
+  "meta": {
+    "total": 48
+  }
+}
