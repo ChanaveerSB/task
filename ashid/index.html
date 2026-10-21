@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Task List</h1>
+      <p>Manage and track your team's tasks</p>
+    </header>
+
+    <main class="container">
+      <section class="toolbar" aria-label="Task controls">
+        <label for="searchInput">Search tasks</label>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search by title or assignee..."
+        />
+
+        <label for="statusFilter">Filter by status</label>
+        <select id="statusFilter">
+          <option value="all">All statuses</option>
+          <option value="todo">To Do</option>
+          <option value="in_progress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+      </section>
+
+      <p id="taskSummary" aria-live="polite">Loading tasks...</p>
+
+      <div id="errorMessage" role="alert" hidden>
+        <p>Unable to load tasks.</p>
+        <button id="retryButton" type="button">Try again</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="taskTable">
+          <thead>
+            <tr>
+              <th scope="col">
+                <button class="sort-button" data-sort="id">#</button>
+              </th>
+              <th scope="col">
+                <button class="sort-button" data-sort="title">Title</button>
+              </th>
+              <th scope="col">
+                <button class="sort-button" data-sort="project">Project</button>
+              </th>
+              <th scope="col">
+                <button class="sort-button" data-sort="assignee">
+                  Assignee
+                </button>
+              </th>
+              <th scope="col">
+                <button class="sort-button" data-sort="status">Status</button>
+              </th>
+              <th scope="col">
+                <button class="sort-button" data-sort="priority">
+                  Priority
+                </button>
+              </th>
+              <th scope="col">
+                <button class="sort-button" data-sort="dueDate">
+                  Due date
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="taskTableBody"></tbody>
+        </table>
+      </div>
+
+      <section class="pagination" aria-label="Task pagination">
+        <label for="pageSize">Rows per page</label>
+        <select id="pageSize">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="20">20</option>
+        </select>
+
+        <div id="pageControls"></div>
+      </section>
+    </main>
+  </body>
+</html>

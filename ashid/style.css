@@ -1,0 +1,431 @@
+```css
+/* =========================================
+   1. Warm cream and coffee color palette
+========================================= */
+:root {
+  --primary: #98613f;
+  --primary-light: #f0e1d2;
+  --background: #f5f0e7;
+  --surface: #fffdf9;
+  --text: #35281f;
+  --muted: #827468;
+  --border: #ded1c2;
+  --danger: #b7473b;
+  --brown-dark: #4a3428;
+  --brown-light: #eee2d5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* =========================================
+   2. Page header
+========================================= */
+.page-header {
+  background: #ead4b8;
+  color: #3f2b20;
+  padding: 28px;
+  border-bottom: 3px solid #c18a5b;
+  box-shadow: 0 3px 10px rgba(74, 52, 40, 0.08);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #3f2b20;
+}
+
+.page-header p {
+  margin: 7px 0 0;
+  color: #70533e;
+  font-size: 14px;
+}
+
+/* =========================================
+   3. Main content
+========================================= */
+.container {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 28px;
+}
+
+/* =========================================
+   4. Search and filter toolbar
+========================================= */
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--primary);
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(74, 52, 40, 0.05);
+}
+
+.toolbar label,
+.pagination label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brown-dark);
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+.toolbar input,
+.toolbar select,
+.pagination select {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cdbba8;
+  border-radius: 3px;
+  background: #fffefa;
+  color: var(--text);
+}
+
+.toolbar input {
+  flex: 1;
+  min-width: 200px;
+}
+
+input::placeholder {
+  color: #a09284;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #b7835c;
+  outline-offset: 2px;
+  border-color: var(--primary);
+}
+
+#taskSummary {
+  margin: 22px 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   5. Task table
+========================================= */
+.table-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--brown-dark);
+  border-radius: 4px;
+  overflow-x: auto;
+  box-shadow: 0 4px 14px rgba(74, 52, 40, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #eadfd3;
+}
+
+th {
+  background: #eee3d6;
+  color: #634632;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+td {
+  font-size: 14px;
+  color: #44352b;
+}
+
+tbody tr {
+  background: #fffdf9;
+  transition: background 0.15s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: #faf5ed;
+}
+
+tbody tr:hover {
+  background: #f0e4d6;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================================
+   6. Status badges
+========================================= */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-todo {
+  background: #eee8df;
+  color: #6b5c4d;
+  border-color: #d8cbbd;
+}
+
+.status-in_progress {
+  background: #e1eaf4;
+  color: #345b80;
+  border-color: #bfd0e1;
+}
+
+.status-done {
+  background: #e1eddf;
+  color: #416642;
+  border-color: #c4d9c0;
+}
+
+/* =========================================
+   7. Priority labels
+========================================= */
+.priority-low {
+  color: #477044;
+  font-weight: 600;
+}
+
+.priority-medium {
+  color: #9a641c;
+  font-weight: 600;
+}
+
+.priority-high {
+  color: #b7473b;
+  font-weight: 700;
+}
+
+/* =========================================
+   8. Assignee and overdue date
+========================================= */
+.unassigned {
+  color: #948477;
+  font-style: italic;
+}
+
+.overdue {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+/* =========================================
+   9. Pagination controls
+========================================= */
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+#pageControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-left: auto;
+}
+
+button {
+  min-height: 44px;
+  padding: 9px 15px;
+  border: 1px solid #d0bdab;
+  border-radius: 3px;
+  background: #fffdf9;
+  color: var(--brown-dark);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #f0e1d2;
+  border-color: var(--primary);
+  color: #68452f;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.active {
+  background: var(--brown-dark);
+  color: #fff8ee;
+  border-color: var(--brown-dark);
+}
+
+/* =========================================
+   10. Table sorting buttons
+========================================= */
+.sort-button {
+  min-height: 34px;
+  padding: 5px 7px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+
+.sort-button:hover:not(:disabled) {
+  background: #e1d0bd;
+  color: #4a3428;
+  border-color: #cdb79f;
+}
+
+.sort-button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* =========================================
+   11. Error message
+========================================= */
+#errorMessage {
+  margin: 16px 0;
+  padding: 16px;
+  background: #fae8e3;
+  color: #913b31;
+  border: 1px solid #e7b9ae;
+  border-left: 5px solid var(--danger);
+  border-radius: 3px;
+}
+
+/* =========================================
+   12. Mobile responsive layout
+========================================= */
+@media (max-width: 767px) {
+  .page-header {
+    padding: 22px 16px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .toolbar input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .toolbar select {
+    width: 100%;
+  }
+
+  .table-wrapper {
+    overflow: visible;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  table,
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 16px;
+    padding: 8px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid #b7835c;
+    border-radius: 3px;
+    box-shadow: 0 3px 9px rgba(74, 52, 40, 0.05);
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--surface);
+  }
+
+  tbody tr:hover {
+    background: #faf3e9;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px solid #eadfd3;
+    overflow-wrap: anywhere;
+    text-align: right;
+  }
+
+  tbody td:last-child {
+    border-bottom: none;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #806b59;
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  #pageControls {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #pageControls button {
+    flex: 1;
+    min-width: 44px;
+  }
+}
