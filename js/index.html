@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Task List</h1>
+
+    <!-- Toolbar: search, filter, rows per page, export -->
+    <section class="toolbar" aria-label="Search and filters">
+      <div class="field grow">
+        <label for="search">Search</label>
+        <input type="search" id="search" placeholder="Title or assignee" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label for="statusFilter">Status</label>
+        <select id="statusFilter">
+          <option value="all">All</option>
+          <option value="todo">To Do</option>
+          <option value="in_progress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+      </div>
+
+      <!-- Sorting controls for mobile (column headers are hidden on cards) -->
+      <div class="field mobile-only">
+        <label for="sortSelect">Sort by</label>
+        <div class="sort-row">
+          <select id="sortSelect"></select>
+          <button type="button" id="sortDirBtn" aria-label="Reverse sort order">↑</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="pageSize">Rows per page</label>
+        <select id="pageSize">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+
+      <button type="button" id="exportBtn" class="secondary">Export CSV</button>
+    </section>
+
+    <!-- Loading / error / empty messages are drawn here -->
+    <div id="stateBox" role="status" aria-live="polite"></div>
+
+    <div class="table-wrap" id="tableWrap">
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th scope="col" data-field="id"><button type="button" class="sort-btn" data-field="id">#<span class="arrow" aria-hidden="true"></span></button></th>
+            <th scope="col" data-field="title"><button type="button" class="sort-btn" data-field="title">Title<span class="arrow" aria-hidden="true"></span></button></th>
+            <th scope="col" data-field="project"><button type="button" class="sort-btn" data-field="project">Project<span class="arrow" aria-hidden="true"></span></button></th>
+            <th scope="col" data-field="assignee"><button type="button" class="sort-btn" data-field="assignee">Assignee<span class="arrow" aria-hidden="true"></span></button></th>
+            <th scope="col" data-field="status"><button type="button" class="sort-btn" data-field="status">Status<span class="arrow" aria-hidden="true"></span></button></th>
+            <th scope="col" data-field="priority"><button type="button" class="sort-btn" data-field="priority">Priority<span class="arrow" aria-hidden="true"></span></button></th>
+            <th scope="col" data-field="dueDate"><button type="button" class="sort-btn" data-field="dueDate">Due date<span class="arrow" aria-hidden="true"></span></button></th>
+          </tr>
+        </thead>
+        <tbody id="taskBody"></tbody>
+      </table>
+    </div>
+
+    <p id="summary" class="summary"></p>
+    <nav id="pagination" class="pagination" aria-label="Pagination"></nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

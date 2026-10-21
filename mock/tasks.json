@@ -1,0 +1,487 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Audit permissions",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-11",
+      "createdAt": "2026-10-12T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Update onboarding email",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-09-19",
+      "createdAt": "2026-10-03T09:30:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Plan sprint demo",
+      "project": "Website Revamp",
+      "assignee": "Mohit Gurnani",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-08",
+      "createdAt": "2026-10-19T09:30:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Fix login redirect",
+      "project": "Mobile App",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-12-02",
+      "createdAt": "2026-10-10T09:30:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Write API docs",
+      "project": "Billing",
+      "assignee": "Mohit Gurnani",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-14",
+      "createdAt": "2026-10-04T09:30:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Fix mobile menu",
+      "project": "Website Revamp",
+      "assignee": "Mohit Gurnani",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-19",
+      "createdAt": "2026-10-19T09:30:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Improve search speed",
+      "project": "Internal Tools",
+      "assignee": "John Smith",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-02",
+      "createdAt": "2026-10-15T09:30:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Review pull requests",
+      "project": "Mobile App",
+      "assignee": null,
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-11-12",
+      "createdAt": "2026-10-19T09:30:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Create dashboard charts",
+      "project": "Internal Tools",
+      "assignee": "John Smith",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-12-10",
+      "createdAt": "2026-10-04T09:30:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Optimise image upload",
+      "project": "Billing",
+      "assignee": "Anita Sharma",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-12-17",
+      "createdAt": "2026-10-02T09:30:00Z"
+    },
+    {
+      "id": 11,
+      "title": "Create dashboard charts",
+      "project": "Billing",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-09-22",
+      "createdAt": "2026-10-16T09:30:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Design settings page",
+      "project": "Website Revamp",
+      "assignee": "John Smith",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-12-19",
+      "createdAt": "2026-10-03T09:30:00Z"
+    },
+    {
+      "id": 13,
+      "title": "Translate help centre",
+      "project": "Billing",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-11-02",
+      "createdAt": "2026-10-12T09:30:00Z"
+    },
+    {
+      "id": 14,
+      "title": "Fix mobile menu",
+      "project": "Mobile App",
+      "assignee": "Mohit Gurnani",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-12-01",
+      "createdAt": "2026-10-02T09:30:00Z"
+    },
+    {
+      "id": 15,
+      "title": "Add dark mode",
+      "project": "Mobile App",
+      "assignee": "Priya Nair",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-11-07",
+      "createdAt": "2026-10-03T09:30:00Z"
+    },
+    {
+      "id": 16,
+      "title": "Audit permissions",
+      "project": "Billing",
+      "assignee": "Anita Sharma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-12-06",
+      "createdAt": "2026-10-09T09:30:00Z"
+    },
+    {
+      "id": 17,
+      "title": "Fix mobile menu",
+      "project": "Internal Tools",
+      "assignee": "Anita Sharma",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-12-23",
+      "createdAt": "2026-10-06T09:30:00Z"
+    },
+    {
+      "id": 18,
+      "title": "Review pull requests",
+      "project": "Website Revamp",
+      "assignee": "Priya Nair",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-05",
+      "createdAt": "2026-10-09T09:30:00Z"
+    },
+    {
+      "id": 19,
+      "title": "Add dark mode",
+      "project": "Internal Tools",
+      "assignee": "Mohit Gurnani",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-09-10",
+      "createdAt": "2026-10-19T09:30:00Z"
+    },
+    {
+      "id": 20,
+      "title": "Fix login redirect",
+      "project": "Internal Tools",
+      "assignee": null,
+      "status": "done",
+      "priority": "medium",
+      "dueDate": "2026-10-11",
+      "createdAt": "2026-10-13T09:30:00Z"
+    },
+    {
+      "id": 21,
+      "title": "Write API docs",
+      "project": "Internal Tools",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "low",
+      "dueDate": "2026-12-13",
+      "createdAt": "2026-10-07T09:30:00Z"
+    },
+    {
+      "id": 22,
+      "title": "Translate help centre",
+      "project": "Mobile App",
+      "assignee": "Ravi Kumar",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-03",
+      "createdAt": "2026-10-02T09:30:00Z"
+    },
+    {
+      "id": 23,
+      "title": "Add dark mode",
+      "project": "Website Revamp",
+      "assignee": "John Smith",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-09-04",
+      "createdAt": "2026-10-03T09:30:00Z"
+    },
+    {
+      "id": 24,
+      "title": "Audit permissions",
+      "project": "Mobile App",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-28",
+      "createdAt": "2026-10-20T09:30:00Z"
+    },
+    {
+      "id": 25,
+      "title": "Write API docs",
+      "project": "Website Revamp",
+      "assignee": "Priya Nair",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-12-12",
+      "createdAt": "2026-10-16T09:30:00Z"
+    },
+    {
+      "id": 26,
+      "title": "Add dark mode",
+      "project": "Website Revamp",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-09-10",
+      "createdAt": "2026-10-09T09:30:00Z"
+    },
+    {
+      "id": 27,
+      "title": "Refactor invoice PDF",
+      "project": "Mobile App",
+      "assignee": "Mohit Gurnani",
+      "status": "in_progress",
+      "priority": "low",
+      "dueDate": "2026-10-16",
+      "createdAt": "2026-10-18T09:30:00Z"
+    },
+    {
+      "id": 28,
+      "title": "Design settings page",
+      "project": "Billing",
+      "assignee": "Mohit Gurnani",
+      "status": "in_progress",
+      "priority": "low",
+      "dueDate": "2026-11-01",
+      "createdAt": "2026-10-12T09:30:00Z"
+    },
+    {
+      "id": 29,
+      "title": "Create dashboard charts",
+      "project": "Mobile App",
+      "assignee": "Mohit Gurnani",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-10-25",
+      "createdAt": "2026-10-13T09:30:00Z"
+    },
+    {
+      "id": 30,
+      "title": "Update onboarding email",
+      "project": "Internal Tools",
+      "assignee": "John Smith",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-24",
+      "createdAt": "2026-10-01T09:30:00Z"
+    },
+    {
+      "id": 31,
+      "title": "Improve search speed",
+      "project": "Billing",
+      "assignee": "Anita Sharma",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-11-26",
+      "createdAt": "2026-10-12T09:30:00Z"
+    },
+    {
+      "id": 32,
+      "title": "Fix mobile menu",
+      "project": "Website Revamp",
+      "assignee": "Anita Sharma",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-11-15",
+      "createdAt": "2026-10-16T09:30:00Z"
+    },
+    {
+      "id": 33,
+      "title": "Update onboarding email",
+      "project": "Internal Tools",
+      "assignee": "Mohit Gurnani",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-11-07",
+      "createdAt": "2026-10-16T09:30:00Z"
+    },
+    {
+      "id": 34,
+      "title": "Design settings page",
+      "project": "Website Revamp",
+      "assignee": "Priya Nair",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-11-21",
+      "createdAt": "2026-10-16T09:30:00Z"
+    },
+    {
+      "id": 35,
+      "title": "Create dashboard charts",
+      "project": "Website Revamp",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-12-06",
+      "createdAt": "2026-10-13T09:30:00Z"
+    },
+    {
+      "id": 36,
+      "title": "Optimise image upload",
+      "project": "Mobile App",
+      "assignee": "Anita Sharma",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-24",
+      "createdAt": "2026-10-19T09:30:00Z"
+    },
+    {
+      "id": 37,
+      "title": "Improve search speed",
+      "project": "Billing",
+      "assignee": "Anita Sharma",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-10-15",
+      "createdAt": "2026-10-05T09:30:00Z"
+    },
+    {
+      "id": 38,
+      "title": "Write API docs",
+      "project": "Mobile App",
+      "assignee": "Priya Nair",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "2026-09-01",
+      "createdAt": "2026-10-01T09:30:00Z"
+    },
+    {
+      "id": 39,
+      "title": "Migrate database",
+      "project": "Mobile App",
+      "assignee": "Mohit Gurnani",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-09",
+      "createdAt": "2026-10-18T09:30:00Z"
+    },
+    {
+      "id": 40,
+      "title": "Fix login redirect",
+      "project": "Billing",
+      "assignee": "Priya Nair",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-10-14",
+      "createdAt": "2026-10-17T09:30:00Z"
+    },
+    {
+      "id": 41,
+      "title": "Add dark mode",
+      "project": "Website Revamp",
+      "assignee": "Priya Nair",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-14",
+      "createdAt": "2026-10-01T09:30:00Z"
+    },
+    {
+      "id": 42,
+      "title": "Optimise image upload",
+      "project": "Mobile App",
+      "assignee": "Priya Nair",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-10-25",
+      "createdAt": "2026-10-04T09:30:00Z"
+    },
+    {
+      "id": 43,
+      "title": "Create dashboard charts",
+      "project": "Internal Tools",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-09-18",
+      "createdAt": "2026-10-08T09:30:00Z"
+    },
+    {
+      "id": 44,
+      "title": "Fix login redirect",
+      "project": "Website Revamp",
+      "assignee": "Mohit Gurnani",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-11-07",
+      "createdAt": "2026-10-01T09:30:00Z"
+    },
+    {
+      "id": 45,
+      "title": "Translate help centre",
+      "project": "Billing",
+      "assignee": "Mohit Gurnani",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-09-25",
+      "createdAt": "2026-10-17T09:30:00Z"
+    },
+    {
+      "id": 46,
+      "title": "Translate help centre",
+      "project": "Internal Tools",
+      "assignee": "Mohit Gurnani",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-11-07",
+      "createdAt": "2026-10-17T09:30:00Z"
+    },
+    {
+      "id": 47,
+      "title": "Translate help centre",
+      "project": "Mobile App",
+      "assignee": "Priya Nair",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-09",
+      "createdAt": "2026-10-15T09:30:00Z"
+    },
+    {
+      "id": 48,
+      "title": "Review pull requests",
+      "project": "Internal Tools",
+      "assignee": "Ravi Kumar",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-09-11",
+      "createdAt": "2026-10-10T09:30:00Z"
+    }
+  ],
+  "meta": {
+    "total": 48
+  }
+}
