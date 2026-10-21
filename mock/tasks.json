@@ -1,0 +1,107 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Refactor invoice PDF",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-11-05",
+      "createdAt": "2026-10-13T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Fix login validation",
+      "project": "Mobile App",
+      "assignee": "Priya Sharma",
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-18",
+      "createdAt": "2026-10-12T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Update dashboard UI",
+      "project": "Website Revamp",
+      "assignee": "Ravi Kumar",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-25",
+      "createdAt": "2026-10-14T08:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Test payment API",
+      "project": "Payments",
+      "assignee": null,
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-16",
+      "createdAt": "2026-10-11T12:45:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Add search feature",
+      "project": "Task Manager",
+      "assignee": "Ananya Rao",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-29",
+      "createdAt": "2026-10-15T11:20:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Improve mobile layout",
+      "project": "Website Revamp",
+      "assignee": "Kiran Patil",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-19",
+      "createdAt": "2026-10-10T14:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Secure user sessions",
+      "project": "Mobile App",
+      "assignee": "Priya Sharma",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-21",
+      "createdAt": "2026-10-16T09:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Write API documentation",
+      "project": "Backend Services",
+      "assignee": null,
+      "status": "in_progress",
+      "priority": "low",
+      "dueDate": "2026-10-17",
+      "createdAt": "2026-10-09T16:30:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Fix navigation bug",
+      "project": "Mobile App",
+      "assignee": "Ravi Kumar",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2026-10-30",
+      "createdAt": "2026-10-17T07:45:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Review database indexes",
+      "project": "Backend Services",
+      "assignee": "Ananya Rao",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-10-20",
+      "createdAt": "2026-10-08T13:10:00Z"
+    }
+  ],
+  "meta": {
+    "total": 10
+  }
+}
