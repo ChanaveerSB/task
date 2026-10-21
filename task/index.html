@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Task List</h1>
+        <p>Manage and track your tasks</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Search and filter controls -->
+        <section class="toolbar" aria-label="Task search and filters">
+
+            <div class="control">
+                <label for="search">Search tasks</label>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Search by title or assignee..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="control">
+                <label for="status-filter">Filter by status</label>
+                <select id="status-filter">
+                    <option value="all">All statuses</option>
+                    <option value="todo">To Do</option>
+                    <option value="in_progress">In Progress</option>
+                    <option value="done">Done</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label for="page-size">Rows per page</label>
+                <select id="page-size">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- Loading, error and empty-state messages -->
+        <p id="message" role="status" aria-live="polite">
+            Loading tasks...
+        </p>
+
+        <!-- Task table -->
+        <div class="table-container">
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th scope="col" data-sort="id">#</th>
+                        <th scope="col" data-sort="title">Title</th>
+                        <th scope="col" data-sort="project">Project</th>
+                        <th scope="col" data-sort="assignee">Assignee</th>
+                        <th scope="col" data-sort="status">Status</th>
+                        <th scope="col" data-sort="priority">Priority</th>
+                        <th scope="col" data-sort="dueDate">Due date</th>
+                    </tr>
+                </thead>
+
+                <tbody id="task-body">
+                    <!-- JavaScript will insert task rows here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Result summary and pagination -->
+        <footer class="pagination-area">
+            <p id="summary">Showing 0 tasks</p>
+
+            <nav id="pagination" aria-label="Task pages">
+                <button id="prev-page" type="button" disabled>
+                    Prev
+                </button>
+
+                <div id="page-numbers"></div>
+
+                <button id="next-page" type="button" disabled>
+                    Next
+                </button>
+            </nav>
+        </footer>
+
+    </main>
+</body>
+</html>
