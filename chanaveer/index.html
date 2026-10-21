@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <!-- Page Header -->
+        <header class="page-header">
+
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">T</div>
+
+                <div>
+                    <h1>TaskFlow</h1>
+                    <p class="subtitle">Manage your team's tasks</p>
+                </div>
+            </div>
+
+            <div class="header-badge">
+                <span class="live-dot"></span>
+                Task Overview
+            </div>
+
+        </header>
+
+
+        <!-- Main Content -->
+        <section class="task-section" aria-labelledby="task-heading">
+
+            <div class="section-heading">
+                <div>
+                    <h2 id="task-heading">All Tasks</h2>
+                    <p>Track, organize, and manage your team's work.</p>
+                </div>
+            </div>
+
+
+            <!-- Search and Filters -->
+            <div class="toolbar">
+
+                <div class="search-wrapper">
+
+                    <label for="searchInput">Search tasks</label>
+
+                    <div class="search-box">
+
+                        <span class="search-icon" aria-hidden="true">
+                            &#9906;
+                        </span>
+
+                        <input type="search" id="searchInput" placeholder="Search title or assignee..."
+                            autocomplete="off">
+
+                    </div>
+
+                </div>
+
+
+                <div class="filter-control">
+
+                    <label for="statusFilter">Status</label>
+
+                    <select id="statusFilter">
+
+                        <option value="all">All statuses</option>
+
+                        <option value="todo">To Do</option>
+
+                        <option value="in_progress">In Progress</option>
+
+                        <option value="done">Done</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-control page-size-control">
+
+                    <label for="pageSizeSelect">Rows per page</label>
+
+                    <select id="pageSizeSelect">
+
+                        <option value="5">5 rows</option>
+
+                        <option value="10" selected>10 rows</option>
+
+                        <option value="20">20 rows</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Loading and Error Messages -->
+            <div id="messageContainer" class="message-container" role="status" aria-live="polite" hidden>
+            </div>
+
+
+            <!-- Table -->
+            <div class="table-container" id="tableContainer">
+
+                <table class="task-table">
+
+                    <thead>
+                        <tr>
+
+                            <th data-field="id" scope="col">
+                                # <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                            <th data-field="title" scope="col">
+                                Title <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                            <th data-field="project" scope="col">
+                                Project <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                            <th data-field="assignee" scope="col">
+                                Assignee <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                            <th data-field="status" scope="col">
+                                Status <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                            <th data-field="priority" scope="col">
+                                Priority <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                            <th data-field="dueDate" scope="col">
+                                Due date <span class="sort-icon" aria-hidden="true"></span>
+                            </th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody id="taskTableBody"></tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- Summary and Pagination -->
+            <footer class="table-footer">
+
+                <p id="paginationSummary" class="pagination-summary" aria-live="polite">
+                    Showing 0–0 of 0 tasks
+                </p>
+
+
+                <nav class="pagination-controls" aria-label="Task table pagination">
+
+                    <button type="button" id="prevBtn" class="pagination-button nav-button" aria-label="Previous page"
+                        disabled>
+                        &larr; Prev
+                    </button>
+
+                    <div id="pageButtons" class="page-numbers">
+                    </div>
+
+                    <button type="button" id="nextBtn" class="pagination-button nav-button" aria-label="Next page"
+                        disabled>
+                        Next &rarr;
+                    </button>
+
+                </nav>
+
+            </footer>
+
+        </section>
+
+
+        <!-- Page Footer -->
+        <footer class="app-footer">
+            Built with HTML, CSS and JavaScript
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
