@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow — Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="app-navbar">
+    <div class="navbar-inner">
+      <a class="navbar-brand" href="#">TaskFlow</a>
+      <span class="navbar-text">Task management workspace</span>
+    </div>
+  </nav>
+  <main class="app-shell">
+    <header class="page-heading">
+      <div>
+        <p class="eyebrow">WORKSPACE / TASKS</p>
+        <h1>Task list</h1>
+        <p class="subheading">Track work, priorities, owners and due dates.</p>
+      </div>
+      <div class="summary-pills">
+        <span class="summary-pill"><span class="dot dot-blue"></span><span id="total-count">—</span> total tasks</span>
+        <span class="summary-pill"><span class="dot dot-green"></span><span id="done-count">—</span> completed</span>
+      </div>
+    </header>
+    <section class="filter-card" aria-label="Task controls">
+      <div class="filter-grid">
+        <div class="field field-search">
+          <label for="search" class="form-label">Search tasks</label>
+          <div class="input-group">
+            <span class="input-group-text" aria-hidden="true">⌕</span>
+            <input id="search" class="form-control" type="search" placeholder="Search title or assignee…" autocomplete="off">
+          </div>
+        </div>
+        <div class="field">
+          <label for="status-filter" class="form-label">Status</label>
+          <select id="status-filter" class="form-select">
+            <option value="all">All statuses</option>
+            <option value="todo">To Do</option>
+            <option value="in_progress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="page-size" class="form-label">Rows per page</label>
+          <select id="page-size" class="form-select">
+            <option value="5">5 rows</option>
+            <option value="10" selected>10 rows</option>
+            <option value="20">20 rows</option>
+          </select>
+        </div>
+        <div class="field field-clear">
+          <button id="clear-filters" class="btn btn-outline-secondary" type="button">Clear filters</button>
+        </div>
+      </div>
+    </section>
+    <section class="table-card">
+      <div class="table-wrap">
+        <table class="task-table" id="task-table">
+          <thead>
+            <tr>
+              <th scope="col"><button class="sort-button" data-sort="id" type="button"># <span class="sort-arrow"></span></button></th>
+              <th scope="col"><button class="sort-button" data-sort="title" type="button">Title <span class="sort-arrow"></span></button></th>
+              <th scope="col"><button class="sort-button" data-sort="project" type="button">Project <span class="sort-arrow"></span></button></th>
+              <th scope="col"><button class="sort-button" data-sort="assignee" type="button">Assignee <span class="sort-arrow"></span></button></th>
+              <th scope="col"><button class="sort-button" data-sort="status" type="button">Status <span class="sort-arrow"></span></button></th>
+              <th scope="col"><button class="sort-button" data-sort="priority" type="button">Priority <span class="sort-arrow"></span></button></th>
+              <th scope="col"><button class="sort-button" data-sort="dueDate" type="button">Due date <span class="sort-arrow"></span></button></th>
+            </tr>
+          </thead>
+          <tbody id="task-rows">
+            <tr><td colspan="7">Loading tasks...</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="table-state" class="state-panel d-none"></div>
+      <footer class="pagination-footer">
+        <p id="showing-text" class="showing-text" aria-live="polite">Loading tasks…</p>
+        <nav aria-label="Task pages"><ul id="pagination" class="pagination"></ul></nav>
+      </footer>
+    </section>
+    <p class="tip">Tip: select a column heading to sort. Search and status filters work together.</p>
+  </main>
+</body>
+</html>
